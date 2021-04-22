@@ -1,0 +1,6 @@
+D:\Построение фрактальных изображений\Множество Мандельброта\Mandelbrot\Debug\Mandelbrot.exe
+D:\Построение фрактальных изображений\Множество Мандельброта\Mandelbrot\Debug\Mandelbrot.pdb
+E:\Построение фрактальных изображений\Множество Мандельброта\Mandelbrot\Debug\Mandelbrot.exe
+E:\Построение фрактальных изображений\Множество Мандельброта\Mandelbrot\Debug\Mandelbrot.pdb
+C:\Users\79966\Desktop\Построение фрактальных изображений\Множество Мандельброта\Mandelbrot\Debug\Mandelbrot.exe
+C:\Users\79966\Desktop\Построение фрактальных изображений\Множество Мандельброта\Mandelbrot\Debug\Mandelbrot.pdb
