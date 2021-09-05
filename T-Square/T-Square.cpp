@@ -8,7 +8,7 @@ void DrawTSquare(int xCenter, int yCenter, int lenght, int i);
 int main(int argc, char** argv) {
 	//Передаём параметры функции main 
 	glutInit(&argc, argv);
-	//Иницилизируем дисплей с одним буфером(GLUT_SINGLE) в фрмате RGB 24 битный цвет
+	//Иницилизируем дисплей с одним буфером(GLUT_SINGLE) в формате RGB 24 битный цвет
 	glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
 	//Устанавливаем размер окна(1000 на 1000 пикселей)
 	glutInitWindowSize(1000, 1000);
