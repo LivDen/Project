@@ -1,4 +1,4 @@
-﻿//Подключение библиотеки GLUT
+//Подключение библиотеки GLUT
 #include <GL/glut.h> 
 
 void Init(void);
@@ -6,7 +6,7 @@ void Display(void);
 void DrawMandelbrot(int iterations);
 
 int main(int argc, char** argv) {
-	//Иницилизация GLUT
+	//Передаём параметры функции main 
 	glutInit(&argc, argv);
 	/*Режим отображения информации.
 	SINGLE: Вывод в окно осуществляется с использованием 1 буфера.
@@ -14,7 +14,7 @@ int main(int argc, char** argv) {
 	glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
 	//Размеры окна
 	glutInitWindowSize(1000, 1000);
-	//Положение создаваемого окна относительно верхнего левого угла экрана
+	//Расположение окна (x,y)
 	glutInitWindowPosition(350, 20);
 	//Создание окна
 	glutCreateWindow("Множество Мандельброта");
@@ -26,10 +26,11 @@ int main(int argc, char** argv) {
 }
 
 void Init() {
-	//Задает значения очистки цветом буфера цвета
+	//Очистка окна в белый цвет
 	glClearColor(1.0, 1.0, 1.0, 0.0);
-	//Все последующие изменения будут применяться к проекционной матрице
+	//Настроим 2-х мерный вид
 	glMatrixMode(GL_PROJECTION);
+	//Текущая матрица сбрасывается на единичную
 	glLoadIdentity();
 	//Устанавка двумерной орфографической области просмотра
 	gluOrtho2D(-2, 2, -2, 2);
@@ -38,7 +39,9 @@ void Init() {
 void Display() {
 	//Очистка буфера цвета
 	glClear(GL_COLOR_BUFFER_BIT);
+	//Установливаем белый цвет
 	glColor3f(1.0, 1.0, 1.0);
+	//Количество итераций рисования
 	DrawMandelbrot(1000);
 	//Ожидание конца прорисовки
 	glFlush();
