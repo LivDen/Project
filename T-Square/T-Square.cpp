@@ -1,7 +1,7 @@
 //Подключение библиотеки GLUT
 #include <GL/glut.h> 
 
-void Init(void);
+void Initialization(void);
 void Display(void);
 void DrawTSquare(int xCenter, int yCenter, int lenght, int i);
 
@@ -16,13 +16,13 @@ int main(int argc, char** argv) {
 	glutInitWindowPosition(350, 20);
 	//Создание окна; Название окна
 	glutCreateWindow("Т-Квадрат");
-	Init();
+	Initialization();
 	glutDisplayFunc(Display);
 	//Функция, завершающая описание окна
 	glutMainLoop();
 }
 
-void Init() {
+void Initialization() {
 	//Очистка окна в черный цвет
 	glClearColor(0.0, 0.0, 0.0, 0.0);
 	//Настроим 2-х мерный вид
